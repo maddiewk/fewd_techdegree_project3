@@ -1,0 +1,29 @@
+/****** GLOBAL STYLES ******/
+
+* {
+  font-family: "Merriweather", serif;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+form,
+/* fieldset, */
+header {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+fieldset {
+  border: 0;
+}
+
+header,
+form,
+fieldset {
+  border: solid 3px red;
+  /* justify-content: flex-start; */
+}
