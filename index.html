@@ -21,15 +21,15 @@
       <legend>Contact Information</legend>
       <div>
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="name"/>
+        <input type="text" id="name" name="name" placeholder="Required"/>
       </div>
       <div>
         <label for="email">Email Address</label>
-        <input type="text" id="email" name="email"/>
+        <input type="email" id="email" name="email" placeholder="Required"/>
       </div>
       <div>
         <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="phone"/>
+        <input type="tel" id="phone" name="phone"/>
       </div>
       <div>
         <label for="address">Street Address</label>
@@ -40,7 +40,7 @@
         <input type="text" id="city" name="city"/>
       </div>
       <div>
-        <select name="state">State>
+        <select id="state" name="state">State>
           <option>Choose State</option>
           <optgroup label="A">
             <option value="AL">Alabama</option>
@@ -171,8 +171,9 @@
     </fieldset>
 
     <fieldset>
-      <h2>Other topics you'd like to hear about</h2>
-      <textarea name="message" rows="8" cols="80"></textarea>
+      <!-- <h2>Other topics you'd like to hear about</h2> -->
+      <label for="message">Other topics you'd like to hear about</label>
+      <textarea id="message" name="message" rows="8" cols="80"></textarea>
     </fieldset>
 
     <div class="button">
