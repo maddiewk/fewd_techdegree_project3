@@ -17,7 +17,7 @@
 
 
     <form>
-      <fieldset>
+      <fieldset class="contact">
       <legend>Contact Information</legend>
       <div>
         <label for="name">Full Name</label>
@@ -167,20 +167,20 @@
       <input type="checkbox" name="js" value="js_news"> JavaScript News<br>
       <h2>Newsletter format</h2>
       <input type="radio" name="h_format" value="html_format">HTML<br>
-      <input type="checkbox" name="plain" value="plain_text">Plain Text<br>
+      <input type="radio" name="plain" value="plain_text">Plain Text<br>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="topic">
       <!-- <h2>Other topics you'd like to hear about</h2> -->
       <label for="message">Other topics you'd like to hear about</label>
-      <textarea id="message" name="message" rows="8" cols="80"></textarea>
+      <textarea id="message" name="message" rows="8" cols="50"></textarea>
     </fieldset>
 
     <div class="button">
-      <button type="button" name="submit">Sign Up</button>
-    </div>
-    <p>Copyright The Code Review</p>
+      <button type="button" id="submit" name="submit">Sign Up</button>
 
+      <p>Copyright The Code Review</p>
+    </div>
     </form>
     </body>
 </html>
