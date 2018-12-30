@@ -10,6 +10,7 @@ body {
 }
 
 .form-row,
+.contact,
 header,
 .intro {
   display: flex;
@@ -31,12 +32,18 @@ header {
 .form-row {
   padding: 10px;
   margin: 5px;
+  flex-direction: column;
+  /* display: block; */
 }
 
 .form-row input {
   flex: 1;
   height: 30px;
-  /* border: solid 3px green; */
+  max-width: 100%;
+}
+
+.form-row label {
+  /* display: block; */
 }
 
 fieldset {
