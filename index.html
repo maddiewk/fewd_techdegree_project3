@@ -11,34 +11,41 @@
 
     <header>
       <h1>THE CODE REVIEW</h1>
-      <h2>Signup for our newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
     </header>
 
+    <div class="intro">
+      <h3>Signup for our newsletter</h3>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
 
     <form>
       <fieldset class="contact">
       <legend>Contact Information</legend>
-      <div>
+      <div class="form-row">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" placeholder="Required"/>
       </div>
-      <div>
+
+      <div class="form-row">
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" placeholder="Required"/>
       </div>
-      <div>
+
+      <div class="form-row">
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" placeholder="(111) 111-1111"/>
       </div>
-      <div>
+
+      <div class="form-row">
         <label for="address">Street Address</label>
         <input type="text" id="address" name="address" placeholder="1111 Smith Avenue"/>
       </div>
-      <div>
+
+      <div class="form-row">
         <label for="city">City</label>
         <input type="text" id="city" name="city"/>
       </div>
+
       <div>
         <select id="state" name="state">State>
           <option>Choose State</option>
@@ -151,7 +158,8 @@
 
         </select>
       </div>
-      <div>
+
+      <div class="form-row">
         <label for="zip">Zip Code</label>
         <input type="text" id="zip" name="zip"/>
       </div>
@@ -159,15 +167,17 @@
 
     <hr>
 
-    <fieldset>
+    <fieldset class="newsletter">
       <legend>Newsletter</legend>
-      <h2>Select the newsletters you would like to receive</h2>
+      <p>Select the newsletters you would like to receive</p>
       <input type="checkbox" name="html" value="html_news"> HTML News<br>
       <input type="checkbox" name="css" value="css_news"> CSS News<br>
       <input type="checkbox" name="js" value="js_news"> JavaScript News<br>
-      <h2>Newsletter format</h2>
-      <input type="radio" name="h_format" value="html_format">HTML<br>
-      <input type="radio" name="plain" value="plain_text">Plain Text<br>
+      <p>Newsletter format</p>
+      <input type="radio" id="html" name="format" value="html_format">
+      <label for="html">HTML</label>
+      <input type="radio" id="plain" name="format" value="plain_text">
+      <label for="plain">Plain Text</label>
     </fieldset>
 
     <fieldset class="topic">
@@ -181,6 +191,7 @@
 
       <p>Copyright The Code Review</p>
     </div>
+    
     </form>
     </body>
 </html>

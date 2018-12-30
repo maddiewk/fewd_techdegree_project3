@@ -5,15 +5,38 @@
   box-sizing: border-box;
 }
 
-form,
-fieldset,
-header {
+body {
+  color: #848484;
+}
+
+.form-row,
+header,
+.intro {
   display: flex;
+}
+
+.intro {
   flex-direction: column;
+  align-items: center;
 }
 
 header {
+  background-color: #444B5A;
+  color: white;
+  flex-direction: column;
   align-items: center;
+}
+
+
+.form-row {
+  padding: 10px;
+  margin: 5px;
+}
+
+.form-row input {
+  flex: 1;
+  height: 30px;
+  /* border: solid 3px green; */
 }
 
 fieldset {
@@ -22,15 +45,26 @@ fieldset {
 
 #submit {
   padding: 20px 50px;
-  background-color: blue;
+  background-color: #3EB4A8;
   color: white;
-  font-size: large;
+  font-size: 15px;
 }
 
 #submit:hover {
   cursor: pointer;
 }
 
+.newsletter {
+  border: 3px solid blue;
+}
+
+.topic,
 .button {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.button p {
+  font-style: italic;
 }
