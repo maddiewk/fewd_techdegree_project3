@@ -6,7 +6,45 @@
 }
 
 body {
-  color: #848484;
+  color: #A8A8A8;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/****** ELEMENT STYLES ******/
+
+fieldset {
+  border: 0;
+}
+
+header {
+  background-color: #3E475A;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.line {
+  margin-bottom: -3px;
+}
+
+.contact legend,
+.form-row,
+.zip-row {
+  padding: 10px;
+  margin: 5px;
+}
+
+legend,
+.title {
+  color: #444B5A;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 .form-row,
@@ -18,51 +56,44 @@ header,
 
 .intro {
   flex-direction: column;
-  align-items: center;
+  margin: auto;
+  text-align: center;
+  max-width: 60%;
 }
 
-header {
-  background-color: #444B5A;
-  color: white;
-  flex-direction: column;
-  align-items: center;
+.intro p {
+  flex-wrap: wrap;
+  text-align: center;
 }
-
 
 .form-row {
-  padding: 10px;
-  margin: 5px;
   flex-direction: column;
-  /* display: block; */
-}
-
-.form-row input {
-  flex: 1;
-  height: 30px;
-  max-width: 100%;
 }
 
 .form-row label {
-  /* display: block; */
-}
-
-fieldset {
-  border: 0;
+  margin-bottom: 8px;
 }
 
 #submit {
-  padding: 20px 50px;
+  padding: 20px 40px;
   background-color: #3EB4A8;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
+  width: 96%;
+  margin: 25px 0;
 }
 
 #submit:hover {
   cursor: pointer;
 }
 
+.select {
+  padding: 10px;
+  margin: 5px;
+}
+
 .newsletter {
-  border: 3px solid blue;
+  margin-top: 18px;
 }
 
 .topic,
@@ -72,6 +103,69 @@ fieldset {
   align-items: center;
 }
 
-.button p {
+.footer {
   font-style: italic;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/****** INPUT STYLES ******/
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+#message {
+  margin-top: 25px;
+}
+
+input,
+textarea {
+  background-color: #F0F0F0;
+  border: white;
+}
+
+.form-row input {
+  height: 50px;
+}
+
+.zip-row input {
+  display: flex;
+  height: 50px;
+  width: 30%;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.2em;
+  padding: 10px;
+  color: #BEBEBE;
+}
+
+#state {
+  height: 50px;
+  background-color: #F0F0F0;
+  width: 100%;
+  border: 0;
+  color: #BEBEBE;
+  font-size: .9em;
+}
+
+input[type='checkbox'] {
+  margin: 10px;
+}
+
+#html,
+#plain {
+  margin: 10px;
+}
+
+/****** MEDIA QUERIES ******/
+
+@media (min-width: 768px) {
+  body {
+    /* background-color: lightblue; */
+  }
 }
