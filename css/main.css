@@ -79,6 +79,7 @@ header,
   background-color: #3EB4A8;
   color: white;
   font-size: 18px;
+  font-weight: bold;
   width: 96%;
   margin: 25px 0;
 }
@@ -94,6 +95,10 @@ header,
 
 .newsletter {
   margin-top: 18px;
+}
+
+.newsletter_color {
+  background-color: #FFCE6B;
 }
 
 .topic,
@@ -114,6 +119,7 @@ header,
 textarea {
   width: 100%;
   resize: none;
+  padding: 15px;
 }
 
 #message {
@@ -142,6 +148,18 @@ input::placeholder {
   font-size: 1.2em;
   padding: 10px;
   color: #BEBEBE;
+}
+
+#name:focus,
+#email:focus,
+#phone:focus,
+#address:focus,
+#city:focus,
+#state:focus,
+#zip:focus,
+textarea:focus {
+  outline: 1px solid #3E475A;
+  padding: 0px 15px;
 }
 
 #state {
