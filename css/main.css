@@ -90,6 +90,7 @@ header,
 
 #submit:hover {
   cursor: pointer;
+  background-color: #91EBC9;
 }
 
 .select {
@@ -161,6 +162,17 @@ input::placeholder {
   color: #BEBEBE;
 }
 
+#name,
+#email,
+#phone,
+#address,
+#city,
+#state,
+#zip,
+textarea {
+  transition: background-color .5s linear;
+}
+
 #name:focus,
 #email:focus,
 #phone:focus,
@@ -171,7 +183,6 @@ input::placeholder {
 textarea:focus {
   outline: 1px solid #3E475A;
   padding: 0px 15px;
-  transition: 1s;
   background-color: #D9EAF5;
 }
 
