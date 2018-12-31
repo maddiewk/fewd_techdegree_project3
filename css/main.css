@@ -59,6 +59,7 @@ header,
   margin: auto;
   text-align: center;
   max-width: 60%;
+  background-color: #D9EAF5;
 }
 
 .intro p {
@@ -95,10 +96,11 @@ header,
 
 .newsletter {
   margin-top: 18px;
+  background-color: #D9EAF5;
 }
 
 .newsletter_color {
-  background-color: #FFCE6B;
+  background-color: #D9EAF5;
 }
 
 .topic,
@@ -150,6 +152,12 @@ input::placeholder {
   color: #BEBEBE;
 }
 
+#message::placeholder {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #BEBEBE;
+}
+
 #name:focus,
 #email:focus,
 #phone:focus,
@@ -160,6 +168,8 @@ input::placeholder {
 textarea:focus {
   outline: 1px solid #3E475A;
   padding: 0px 15px;
+  transition: 1s;
+  background-color: #D9EAF5;
 }
 
 #state {
