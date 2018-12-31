@@ -48,6 +48,7 @@ legend,
 }
 
 .form-row,
+.zip-row
 .contact,
 header,
 .intro {
@@ -67,11 +68,13 @@ header,
   text-align: center;
 }
 
-.form-row {
+.form-row,
+.zip-row {
   flex-direction: column;
 }
 
-.form-row label {
+.form-row label,
+.zip-row label {
   margin-bottom: 8px;
 }
 
@@ -193,7 +196,31 @@ input[type='checkbox'] {
 /****** MEDIA QUERIES ******/
 
 @media (min-width: 768px) {
-  body {
-    /* background-color: lightblue; */
+  .form-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-row input,
+  #state {
+    display: inline-block;
+    width: 60%;
+    flex: 1;
+  }
+
+  .form-row label {
+    margin: auto;
+  }
+
+  .zip-row input {
+    width: 20%;
+  }
+
+  .line {
+    margin-top: 60px;
+  }
+
+  .twoline {
+    margin-bottom: 60px;
   }
 }
