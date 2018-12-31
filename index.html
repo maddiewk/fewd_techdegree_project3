@@ -16,7 +16,8 @@
     <div class="intro">
       <h2 class="title">Signup for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
-    </div>
+
+    </div><br>
 
     <div class="container">
       <div class="line">
@@ -37,7 +38,7 @@
 
         <div class="form-row">
           <label for="email">Email Address</label>
-          <input required type="email" id="email" name="email" placeholder="Required">
+          <input required type="email" id="email" name="email" pattern=".+@globex.com" placeholder="Required">
         </div>
 
         <div class="form-row">
@@ -175,7 +176,9 @@
         </div>
       </fieldset>
 
-      <hr style="border: 1px solid #3E475A;">
+      <div class="line">
+        <hr style="border: 1px solid #3E475A;">
+      </div>
 
       <fieldset class="newsletter">
       <legend>Newsletter</legend>

@@ -25,12 +25,14 @@ header {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-.line {
-  margin-bottom: -3px;
+.line,
+.twoline {
+  margin: auto;
+  max-width: 90%;
 }
 
 .contact legend,
@@ -98,6 +100,10 @@ header,
   margin: 5px;
 }
 
+.newsletter {
+  margin-top: 30px;
+}
+
 .topic,
 .button {
   display: flex;
@@ -143,7 +149,7 @@ input::placeholder {
   text-align: right;
   font-style: italic;
   font-size: 1.2em;
-  padding: 10px;
+  padding-right: 10px;
   color: #BEBEBE;
 }
 
@@ -170,10 +176,15 @@ textarea {
 #address:focus,
 #city:focus,
 #state:focus,
-#zip:focus,
+#zip:focus {
+  outline: 1px solid #3E475A;
+  padding: 0px 0px 0px 10px;
+  background-color: #D9EAF5;
+}
+
 textarea:focus {
   outline: 1px solid #3E475A;
-  padding: 0px 15px;
+  padding: 10px 0px 10px 20px;
   background-color: #D9EAF5;
 }
 
@@ -212,6 +223,7 @@ input[type='checkbox'] {
   .zip-row {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .form-row input,
@@ -229,12 +241,21 @@ input[type='checkbox'] {
     min-width: 10em;
   }
 
+  #zip {
+    width: 30%;
+  }
+
   .line {
     margin-top: 60px;
   }
 
   .twoline {
     margin-bottom: 60px;
+  }
+
+  .line,
+  .twoline {
+    max-width: 100%;
   }
 
   .newsletter {
