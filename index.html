@@ -27,7 +27,7 @@
         <hr style="border: 1px solid #3E475A;">
       </div>
 
-      <form>
+      <form action="index.html" method="post">
         <fieldset class="contact">
         <legend>Contact Information</legend>
         <div class="form-row">
@@ -180,13 +180,13 @@
       <fieldset class="newsletter">
       <legend>Newsletter</legend>
       <p>Select the newsletters you would like to receive</p>
-      <input type="checkbox" name="html" value="html_news"> HTML News<br>
-      <input type="checkbox" name="css" value="css_news"> CSS News<br>
-      <input type="checkbox" name="js" value="js_news"> JavaScript News<br>
+      <input type="checkbox" id="htmlnews" name="html" value="html_news"><label for="htmlnews">HTML News</label><br>
+      <input type="checkbox" id="cssnews" name="css" value="css_news"><label for="cssnews">CSS News</label><br>
+      <input type="checkbox" id="jsnews" name="js" value="js_news"><label for="jsnews">JavaScript News</label><br>
       <p>Newsletter format</p>
 
-      <input type="radio" id="html" name="format" value="html_format">HTML <br>
-      <input type="radio" id="plain" name="format" value="plain_text">Plain Text <br>
+      <input type="radio" id="html" name="format" value="html_format"><label for="html">HTML</label><br>
+      <input type="radio" id="plain" name="format" value="plain_text"><label for="plain">Plain Text</label><br>
       </fieldset>
 
       <fieldset class="topic">
@@ -195,7 +195,7 @@
       </fieldset>
 
       <div class="button">
-        <button type="button" id="submit" name="submit">Sign Up</button>
+        <button type="submit" id="submit" name="submit">Sign Up</button>
       </div>
       </form>
     </div>

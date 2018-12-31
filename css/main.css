@@ -136,7 +136,7 @@ textarea {
 .zip-row input {
   display: flex;
   height: 50px;
-  width: 30%;
+  width: 50%;
 }
 
 input::placeholder {
