@@ -196,7 +196,18 @@ input[type='checkbox'] {
 /****** MEDIA QUERIES ******/
 
 @media (min-width: 768px) {
-  .form-row {
+
+  .container {
+    max-width: 60%;
+  }
+
+  .contact {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-row,
+  .zip-row {
     display: flex;
     flex-direction: row;
   }
@@ -209,11 +220,11 @@ input[type='checkbox'] {
   }
 
   .form-row label {
-    margin: auto;
+    min-width: 10em;
   }
 
-  .zip-row input {
-    width: 20%;
+  .zip-row label {
+    min-width: 10em;
   }
 
   .line {
@@ -222,5 +233,13 @@ input[type='checkbox'] {
 
   .twoline {
     margin-bottom: 60px;
+  }
+
+  .newsletter {
+    margin-top: 60px;
+  }
+
+  .topic {
+    margin-top: 30px;
   }
 }
