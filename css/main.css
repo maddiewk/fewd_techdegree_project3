@@ -98,15 +98,6 @@ header,
   margin: 5px;
 }
 
-.newsletter {
-  margin-top: 18px;
-  background-color: #D9EAF5;
-}
-
-.newsletter_color {
-  background-color: #D9EAF5;
-}
-
 .topic,
 .button {
   display: flex;
